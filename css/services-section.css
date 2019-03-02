@@ -81,3 +81,19 @@
 #services-section .services-container .box.yellow {
     border-bottom: 2px solid #ffc853;
 }
+
+/*Tablets*/
+@media only screen and (max-width: 960px){
+    #services-section .services-container{
+        grid-template-columns: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+    #services-section .services-container{
+        grid-template-columns: 100%;
+    }
+}

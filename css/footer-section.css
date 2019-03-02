@@ -82,3 +82,12 @@ footer h6{
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
 
+/*Tablets*/
+@media only screen and (max-width: 960px){
+
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+
+}
