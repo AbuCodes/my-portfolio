@@ -19,6 +19,98 @@ body{
     margin: 0 auto;
 }
 
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    background: white;
+    z-index: 9;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+}
+
+header .logo .name {
+    background: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+header .header-menu {
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-menu a{
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;  
+    color: black;
+    padding: 10px 10px;
+    transition: all .4s ease-in-out;
+}
+
+header .header-menu a:hover{
+    color: white;
+    background: black;
+}
+
+header .menu-btn{
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.6rem;
+    display: none;
+    cursor: pointer;
+}
+
+header .mobile-menu{
+    display: none;
+    padding: 40px 0;
+    background: white;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 9;
+    transform: translate3d(-120%, 0, 0);
+    transition: all .4s ease-in-out;
+    -webkit-box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+}
+
+header .mobile-menu.active{
+    transform: translate3d(-10%, 0, 0);
+}
+
+header .mobile-menu a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    background: white;
+}
+
+header .mobile-menu a:hover{
+    color: white;
+    background: black;
+}
+
 @media only screen and (max-width: 960px){
     .container{ width: 100% };
 }
@@ -26,5 +118,26 @@ body{
 /* Phones */
 @media only screen and (max-width: 767px){
 
+    header{
+        padding: 10px 20px;
+        margin-bottom: 40px;
+        -webkit-box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+        box-shadow: 2px 0px 70px -15px rgba(0,0,0,0.75);
+    }
 
+    header .header-menu{
+        display: none;
+    }
+
+    header .menu-btn{
+        display: flex;
+    }
+
+    header .logo {
+        font-size: 1.3rem;
+    }
+    header .mobile-menu{
+        display: flex;
+    }
 }
