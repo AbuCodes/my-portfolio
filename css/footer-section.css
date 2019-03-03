@@ -42,11 +42,11 @@ footer h6{
     text-align: center;
 }
 
-.buttons {
+footer .buttons {
     text-align: center;
 }
 
-.btn-hover {
+footer .btn-hover {
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -65,7 +65,7 @@ footer h6{
     transition: all .4s ease-in-out;
 }
 
-.btn-hover:hover {
+footer .btn-hover:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -73,11 +73,11 @@ footer h6{
     transition: all .4s ease-in-out;
 }
 
-.btn-hover:focus {
+footer .btn-hover:focus {
     outline: none;
 }
 
-.btn-hover.color-4 {
+footer .btn-hover.color-4 {
     background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
     box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
 }
