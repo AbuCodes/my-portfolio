@@ -137,6 +137,7 @@ header .mobile-menu a:hover{
 
     header .logo {
         font-size: 1.3rem;
+        margin-top: 8px;
     }
     header .mobile-menu{
         display: flex;
